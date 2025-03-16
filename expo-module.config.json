@@ -1,0 +1,17 @@
+{
+  "platforms": [
+    "apple",
+    "android",
+    "web"
+  ],
+  "apple": {
+    "modules": [
+      "ExpoConfigWriterModule"
+    ]
+  },
+  "android": {
+    "modules": [
+      "expo.modules.configwriter.ExpoConfigWriterModule"
+    ]
+  }
+}
