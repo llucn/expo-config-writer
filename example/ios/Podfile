@@ -10,6 +10,10 @@ ENV['EX_DEV_CLIENT_NETWORK_INSPECTOR'] = podfile_properties['EX_DEV_CLIENT_NETWO
 platform :ios, podfile_properties['ios.deploymentTarget'] || '15.1'
 install! 'cocoapods',
   :deterministic_uuids => false
+# @generated begin react-native-photo-edit - expo prebuild (DO NOT MODIFY) sync-b334d9ecaa49c884d379cb771d3a706ff5826e0d
+pod 'SDWebImage', '~> 5.11.1', :modular_headers => true
+pod 'SDWebImageWebPCoder', '~> 0.8.4', :modular_headers => true
+# @generated end react-native-photo-edit
 
 prepare_react_native_project!
 

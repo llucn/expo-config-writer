@@ -21,10 +21,27 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "expo.modules.configwriter.example"
+      "package": "expo.modules.configwriter.example",
+      "allowBackup": false
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [[
+      "../app.plugin.js", {
+        "ios": {
+          "podfile": {
+            "tag": "react-native-photo-edit",
+            "anchor": "prepare_react_native_project!",
+            "offset": -1,
+            "newSrc": [
+              "pod 'SDWebImage', '~> 5.11.1', :modular_headers => true", 
+              "pod 'SDWebImageWebPCoder', '~> 0.8.4', :modular_headers => true"
+            ],
+            "comment": "#"
+          }
+        }
+      }
+    ]]
   }
 }
